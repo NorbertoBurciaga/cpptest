@@ -17,6 +17,7 @@ FATAL: In-source builds are not allowed.
 endif()
 
 #---------------------------------------- Options ----------------------------------------
+option(BUILD_TESTS   "Build tests in every make" ON)
 
 #---------------------------------------- Settings ---------------------------------------
 # Output directory settings
@@ -29,6 +30,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 #---------------------------------------- Packages ---------------------------------------
+# find boost
+find_package(Boost 1.71 REQUIRED COMPONENTS
+    filesystem
+    program_options
+    regex
+    thread
+)
+
 # find google test 
 find_package(GTest REQUIRED)
 
@@ -36,4 +45,6 @@ find_package(GTest REQUIRED)
 #---------------------------------------- Directories ------------------------------------
 # add the CMakeLists.txt files located in subdirectories
 add_subdirectory(source)
-add_subdirectory(tests)
+if(BUILD_TESTS)
+	add_subdirectory(tests)
+endif()
