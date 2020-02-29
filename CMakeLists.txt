@@ -29,6 +29,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 #---------------------------------------- Packages ---------------------------------------
+# find google test 
+find_package(GTest REQUIRED)
 
 
 #---------------------------------------- Directories ------------------------------------
