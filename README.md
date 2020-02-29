@@ -1,10 +1,10 @@
-# Image: Transfer Style
+# cpptest
 
-Project to apply a style from one image into another one unsing a deep neural network implemented in pytorch c++ frontend
+Project to test several c++ libraries
 
 ## Contents
 
-* [What is Image: Transfer Style?](#what-is-imagetransferstyle)
+* [What is cpptest?](#what-is-cpptest)
 * [Project Hierarchy](#project-hierarchy)
 * [Getting Started](#getting-started)
 * [Testing](#testing)
@@ -14,8 +14,9 @@ Project to apply a style from one image into another one unsing a deep neural ne
 * [License](#license)
 * [References](#references)
 
-## What is Image: Transfer Style?
+## What is cpptest?
 
+Project to test several c++ libraries
 
 [Contents](#contents)
 
@@ -30,8 +31,15 @@ Project to apply a style from one image into another one unsing a deep neural ne
 
 ## Getting Started
 
-```console
-```
+### Requirements
+
+C++ project that depends on:
+
+* **CMake.-** Is an open-source, cross-platform family of tools designed to generate builds, test and package software.[1](#ref1)
+* **Boost.-** Provides free peer-reviewed portable C++ source libraries that work well with the C++ Standard Library.[2](#ref2)
+* **Cucumber.-** Is a software tool to test software. It runs automated acceptance tests written in a behavior-driven development (BDD) style. [3](#ref3)
+* **Google Test & Google Mock.-** Google's C++ test framework.[4](#ref4)
+
 
 [Contents](#contents)
 
@@ -103,7 +111,13 @@ See [LICENSE](LICENSE) file
 
 ## References
 
-1. [Neural transfer using pytorch](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html)
+<a name="ref1"></a>
+1. https://cmake.org/
+<a name="ref2"></a>
+2. http://www.boost.org
+<a name="ref3"></a>
+3. https://cucumber.io
+<a name="ref4"></a>
+4. https://github.com/google/googletest
 
 [Contents](#contents)
-
